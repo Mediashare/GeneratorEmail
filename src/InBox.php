@@ -21,6 +21,7 @@ Class InBox {
         // Check Mail Support
         $checkAddress = $this->checkAddress(); 
         if ($checkAddress['status'] !== 'good'):
+            $checkAddress['message'] = 'This email is not supported.';
             return $checkAddress;
         endif;
 
@@ -33,7 +34,7 @@ Class InBox {
     }
 
     private function checkAddress() {
-        $response = $this->request->post('https://generator.email/check_adres_validation3.php', ['usr' => $this->username, 'dmn' => $this->domain]);
+        $response = $this->request->post($this->url.'/check_adres_validation3.php', ['usr' => $this->username, 'dmn' => $this->domain]);
         return \json_decode($response, true);
     }
 
