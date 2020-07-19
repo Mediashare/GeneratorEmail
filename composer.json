@@ -1,0 +1,23 @@
+{    
+    "name": "mediashare/generator-email",
+    "description": "Generate email address disposable temporary.",
+    "type": "library",
+    "keywords": ["temporary email", "temp mail", "fake email", "fake-mail", "fake email generator", "fakemailgenerator", "throwaway email", "disposable email", "fake mail"],
+    "authors": [
+        {
+            "name": "Thibault Marquand",
+            "email": "thibault@marquand.pro"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "symfony/dom-crawler": "^5.1",
+        "mediashare/kernel": "^0.4.6",
+        "symfony/css-selector": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mediashare\\Mail\\" : "src/"
+        }
+    }
+}
