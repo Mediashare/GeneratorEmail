@@ -1,4 +1,5 @@
 # GeneratorEmail
+**[DEPRECATED] Go to [Gitlab Project](https://gitlab.marquand.pro/MarquandT/generator-email)**
 ## Installation
 ```bash
 composer require mediashare/generator-email
