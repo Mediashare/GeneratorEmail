@@ -12,7 +12,7 @@
     "license": "MIT",
     "require": {
         "symfony/dom-crawler": "^5.1",
-        "mediashare/kernel": "^0.4.6",
+        "mediashare/kernel": "*",
         "symfony/css-selector": "^5.1"
     },
     "autoload": {
